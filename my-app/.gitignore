@@ -21,4 +21,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .oliwkowenotes.md
-/todelete
+.todelete
+.node_modules
