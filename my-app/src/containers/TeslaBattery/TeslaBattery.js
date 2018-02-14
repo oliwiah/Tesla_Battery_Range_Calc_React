@@ -4,11 +4,11 @@ import TeslaNotice from '../../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../../components/TeslaCar/TeslaCar';
 import TeslaStats from '../../components/TeslaStats/TeslaStats';
 import { getModelData } from '../../services/BatteryService';
-import BatteryService from '../../services/BatteryService';
 
 class TeslaBattery extends React.Component {
     constructor(props) {
         super(props);
+
         this.calculateStats = this.calculateStats.bind(this);
         this.statsUpdate = this.statsUpdate.bind(this);
 
@@ -22,19 +22,6 @@ class TeslaBattery extends React.Component {
             }
         }
     }
-
-    render() {
-        const { config, carstats } = this.state;
-        return (
-            <form className="tesla-battery">
-                <h1>Range Per Charge</h1>
-                <TeslaCar wheelsize={ config.wheels }/>
-                <TeslaStats carstats={ carstats }/>
-                <TeslaNotice />
-            </form>
-        )
-    }
-
 
     calculateStats = (models, value) => {
         const dataModels = getModelData();
@@ -59,7 +46,17 @@ class TeslaBattery extends React.Component {
         this.statsUpdate();
     }
 
-
+    render() {
+        const { config, carstats } = this.state;
+        return (
+            <form className="tesla-battery">
+                <h1>Range Per Charge</h1>
+                <TeslaCar wheelsize={ config.wheels }/>
+                <TeslaStats carstats={ carstats }/>
+                <TeslaNotice />
+            </form>
+        )
+    }
 
 }
 

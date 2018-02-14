@@ -6,7 +6,8 @@ const TeslaStats = (props) => {
     const listItems = props.carstats.map((stat) => (
         <li key={stat.model}>
             <div className={`tesla-stats-icon tesla-stats-icon--${stat.model.toLowerCase()}`}></div>
-            <p>{stat.miles}</p>   /* OLIWKA tu są mile */
+            <p className="miles">{stat.miles}</p>
+            <p className="km">{(stat.miles * 1.609).toFixed(0)}</p>
         </li>
     ));
     return (

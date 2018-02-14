@@ -23,14 +23,24 @@
     text-align: right;
 }
 
-.tesla-stats ul li p:after {
+.tesla-stats ul li p.miles:after {
     font-size: 14px;
     font-weight: normal;
     font-family: 'RobotoNormal', sans-serif;
-    content: 'MI';
+    content: 'MI';   /* OLIWKAAAAAAAAAAAAAAAAAAAAAAAA tu KM */
     position: absolute;
     top: 8px;
-    right: 0;
+    /*right: 0;*/
+}
+
+.tesla-stats ul li p.km:after {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'RobotoNormal', sans-serif;
+    content: 'KM';   /* OLIWKAAAAAAAAAAAAAAAAAAAAAAAA tu KM */
+    position: absolute;
+    top: 8px;
+    /*right: 0;*/
 }
 
 .tesla-stats-icon {
