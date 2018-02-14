@@ -1,3 +1,5 @@
+import TeslaStats from "../components/TeslaStats/TeslaStats";
+
 export class BatteryService {
     constructor() {}
     getModelData(): Object {

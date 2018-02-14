@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import TeslaBattery from './containers/TeslaBattery/TeslaBattery';
 import TeslaCar from './components/TeslaCar/TeslaCar';
 import TeslaNotice from './components/TeslaNotice/TeslaNotice';
+import TeslaStats from './components/TeslaStats/TeslaStats';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
             <Header />
             <TeslaBattery>
                 <TeslaCar />
+                <TeslaStats />
 
                 <TeslaNotice />
             </TeslaBattery>
