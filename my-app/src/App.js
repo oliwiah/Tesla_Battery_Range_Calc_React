@@ -6,12 +6,29 @@ import TeslaCar from './components/TeslaCar/TeslaCar';
 import TeslaNotice from './components/TeslaNotice/TeslaNotice';
 import TeslaStats from './components/TeslaStats/TeslaStats';
 
+const counterDefaultVal = {
+    speed: {
+        title: "Speed",
+        unit: "mph",
+        step: 5,
+        min: 45,
+        max: 70
+    },
+    temperature: {
+        title: "Outside Temperature",
+        unit: "°",
+        step: 10,
+        min: -10,
+        max: 40
+    }
+};
+
 class App extends Component {
   render() {
     return (
         <div className="App">
             <Header />
-            <TeslaBattery>
+            <TeslaBattery counterDefaultVal={counterDefaultVal}>
                 <TeslaCar />
                 <TeslaStats />
 
