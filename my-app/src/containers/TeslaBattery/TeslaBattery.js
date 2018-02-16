@@ -3,7 +3,8 @@ import './TeslaBattery.css';
 import TeslaNotice from '../../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../../components/TeslaCar/TeslaCar';
 import TeslaStats from '../../components/TeslaStats/TeslaStats';
-import TeslaCounter from '../../components/TeslaCounter/TeslaCounter';
+import {TeslaCounter2,TeslaCounter} from '../../components/TeslaCounter/TeslaCounter';
+// import TeslaCounter2 from '../../components/TeslaCounter/TeslaCounter';
 import TeslaClimate from '../../components/TeslaClimate/TeslaClimate';
 import TeslaWheels from '../../components/TeslaWheels/TeslaWheels';
 import { getModelData } from '../../services/BatteryService';
@@ -128,7 +129,7 @@ class TeslaBattery extends React.Component {
                         increment={this.increment}
                         decrement={this.decrement}
                     />
-                    <TeslaCounter
+                    <TeslaCounter2
                         currentValue={(this.state.config.speed * 1.609).toFixed(0)}
                         initValues={this.props.counterDefaultVal.speed}
                         increment={this.increment}

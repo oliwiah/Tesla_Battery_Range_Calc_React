@@ -35,4 +35,40 @@ TeslaCounter.propTypes = {
     initValues: PropTypes.object
 }
 
-export default TeslaCounter;
+const TeslaCounter2 = (props) => (
+    <div className="tesla-counter">
+        <p className="tesla-counter__title">{ props.initValues.title }</p>
+        <div className="tesla-counter__container cf">
+            <div className="tesla-counter__item">
+                <p className="tesla-counter__number">
+                    { props.currentValue }
+                    <span id="km"> km/h </span>
+                </p>
+                <div className="tesla-counter__controls">
+                    <button
+                        onClick={(e) => props.increment(e, props.initValues.title)}
+                        disabled={props.currentValue >= props.initValues.max}
+                    >
+                    </button>
+                    <button
+                        onClick={(e) => props.decrement(e, props.initValues.title)}
+                        disabled={props.currentValue <= props.initValues.min}
+                    >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+);
+
+TeslaCounter2.propTypes = {
+    currentValue: PropTypes.number,
+    increment: PropTypes.func,
+    decrement: PropTypes.func,
+    initValues: PropTypes.object
+}
+
+export {
+    TeslaCounter,
+    TeslaCounter2
+}

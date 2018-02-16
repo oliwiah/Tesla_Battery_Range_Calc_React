@@ -40,6 +40,14 @@
     text-transform: uppercase;
 }
 
+.tesla-counter__number span#km {
+    position: absolute;
+    top: 0;
+    left: 47px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
 .tesla-counter__item {
     position: relative;
     width: 100%;
