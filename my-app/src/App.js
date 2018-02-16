@@ -28,12 +28,7 @@ class App extends Component {
     return (
         <div className="App">
             <Header />
-            <TeslaBattery counterDefaultVal={counterDefaultVal}>
-                <TeslaCar />
-                <TeslaStats />
-
-                <TeslaNotice />
-            </TeslaBattery>
+            <TeslaBattery counterDefaultVal={counterDefaultVal} />
         </div>
 
     );
