@@ -1,11 +1,14 @@
 .tesla-counter {
     float: left;
-    width: 230px;
+    width: 225px;
 }
 
 .tesla-counter__title {
     letter-spacing: 2px;
     font-size: 16px;
+}
+.tesla-counter__title#hidden {
+    visibility: hidden;
 }
 
 .tesla-counter__container {

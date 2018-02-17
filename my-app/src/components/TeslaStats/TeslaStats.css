@@ -1,5 +1,5 @@
 .tesla-stats {
-    margin: -70px 0 30px;
+    margin: -75px 0 15px;
 }
 
 .tesla-stats ul {
@@ -27,7 +27,7 @@
     font-size: 14px;
     font-weight: normal;
     font-family: 'RobotoNormal', sans-serif;
-    content: 'MI';   /* OLIWKAAAAAAAAAAAAAAAAAAAAAAAA tu KM */
+    content: 'MI';
     position: absolute;
     top: 8px;
     /*right: 0;*/
@@ -37,7 +37,7 @@
     font-size: 14px;
     font-weight: normal;
     font-family: 'RobotoNormal', sans-serif;
-    content: 'KM';   /* OLIWKAAAAAAAAAAAAAAAAAAAAAAAA tu KM */
+    content: 'KM';
     position: absolute;
     top: 8px;
     /*right: 0;*/

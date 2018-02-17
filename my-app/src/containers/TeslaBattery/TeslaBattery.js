@@ -3,8 +3,7 @@ import './TeslaBattery.css';
 import TeslaNotice from '../../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../../components/TeslaCar/TeslaCar';
 import TeslaStats from '../../components/TeslaStats/TeslaStats';
-import {TeslaCounter2,TeslaCounter} from '../../components/TeslaCounter/TeslaCounter';
-// import TeslaCounter2 from '../../components/TeslaCounter/TeslaCounter';
+import {TeslaCounter,TeslaCounter2, TeslaCounter3} from '../../components/TeslaCounter/TeslaCounter';
 import TeslaClimate from '../../components/TeslaClimate/TeslaClimate';
 import TeslaWheels from '../../components/TeslaWheels/TeslaWheels';
 import { getModelData } from '../../services/BatteryService';
@@ -123,35 +122,47 @@ class TeslaBattery extends React.Component {
                 <TeslaCar wheelsize={config.wheels} />
                 <TeslaStats carstats={carstats} />
                 <div className="tesla-controls cf">
-                    <TeslaCounter
-                        currentValue={this.state.config.speed}
-                        initValues={this.props.counterDefaultVal.speed}
-                        increment={this.increment}
-                        decrement={this.decrement}
-                    />
-                    <TeslaCounter2
-                        currentValue={(this.state.config.speed * 1.609).toFixed(0)}
-                        initValues={this.props.counterDefaultVal.speed}
-                        increment={this.increment}
-                        decrement={this.decrement}
-                    />
-                    <div className="tesla-climate-container cf">
-                        <TeslaCounter
-                            currentValue={this.state.config.temperature}
-                            initValues={this.props.counterDefaultVal.temperature}
-                            increment={this.increment}
-                            decrement={this.decrement}
-                        />
-                        <TeslaClimate
-                            value={this.state.config.climate}
-                            limit={this.state.config.temperature > 10}
-                            handleChangeClimate={this.handleChangeClimate}
+                    <div className="tesla-center-div-main">
+                        <div className="tesla-center-div-in">
+                            <TeslaCounter
+                                currentValue={this.state.config.speed}
+                                initValues={this.props.counterDefaultVal.speed}
+                                increment={this.increment}
+                                decrement={this.decrement}
+                            />
+                            <TeslaCounter2
+                                currentValue={Number((this.state.config.speed * 1.609).toFixed(0))}
+                                initValues={this.props.counterDefaultVal.speed}
+                                increment={this.increment}
+                                decrement={this.decrement}
+                            />
+                            <TeslaClimate
+                                value={this.state.config.climate}
+                                limit={this.state.config.temperature > 10}
+                                handleChangeClimate={this.handleChangeClimate}
+                            />
+                            <TeslaCounter
+                                currentValue={this.state.config.temperature}
+                                initValues={this.props.counterDefaultVal.temperature}
+                                increment={this.increment}
+                                decrement={this.decrement}
+                            />
+                            <TeslaCounter3
+                                currentValue={(this.state.config.temperature*1.8)+32}
+                                initValues={this.props.counterDefaultVal.temperature}
+                                increment={this.increment}
+                                decrement={this.decrement}
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="tesla-controls cf">
+                    <div className="tesla-center-div-main">
+                        <TeslaWheels
+                           value={this.state.config.wheels}
+                           handleChangeWheels={this.handleChangeWheels}
                         />
                     </div>
-                    <TeslaWheels
-                        value={this.state.config.wheels}
-                        handleChangeWheels={this.handleChangeWheels}
-                    />
                 </div>
                 <TeslaNotice />
             </form>

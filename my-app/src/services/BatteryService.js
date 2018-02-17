@@ -1,5 +1,3 @@
-import TeslaStats from "../components/TeslaStats/TeslaStats";
-
 export function getModelData() {
     return {
         '60': {

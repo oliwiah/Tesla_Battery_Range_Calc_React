@@ -37,7 +37,7 @@ TeslaCounter.propTypes = {
 
 const TeslaCounter2 = (props) => (
     <div className="tesla-counter">
-        <p className="tesla-counter__title">{ props.initValues.title }</p>
+        <p className="tesla-counter__title" id="hidden">{ props.initValues.title }</p>
         <div className="tesla-counter__container cf">
             <div className="tesla-counter__item">
                 <p className="tesla-counter__number">
@@ -47,12 +47,12 @@ const TeslaCounter2 = (props) => (
                 <div className="tesla-counter__controls">
                     <button
                         onClick={(e) => props.increment(e, props.initValues.title)}
-                        disabled={props.currentValue >= props.initValues.max}
+                        disabled={props.currentValue >= 113}
                     >
                     </button>
                     <button
                         onClick={(e) => props.decrement(e, props.initValues.title)}
-                        disabled={props.currentValue <= props.initValues.min}
+                        disabled={props.currentValue <= 72}
                     >
                     </button>
                 </div>
@@ -68,7 +68,41 @@ TeslaCounter2.propTypes = {
     initValues: PropTypes.object
 }
 
+const TeslaCounter3 = (props) => (
+    <div className="tesla-counter">
+        <p className="tesla-counter__title" id="hidden">{ props.initValues.title }</p>
+        <div className="tesla-counter__container cf">
+            <div className="tesla-counter__item">
+                <p className="tesla-counter__number">
+                    { props.currentValue }
+                    <span id="km"> f </span>
+                </p>
+                <div className="tesla-counter__controls">
+                    <button
+                        onClick={(e) => props.increment(e, props.initValues.title)}
+                        disabled={props.currentValue >= 104}
+                    >
+                    </button>
+                    <button
+                        onClick={(e) => props.decrement(e, props.initValues.title)}
+                        disabled={props.currentValue <= 14}
+                    >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+);
+
+TeslaCounter3.propTypes = {
+    currentValue: PropTypes.number,
+    increment: PropTypes.func,
+    decrement: PropTypes.func,
+    initValues: PropTypes.object
+}
+
 export {
     TeslaCounter,
-    TeslaCounter2
+    TeslaCounter2,
+    TeslaCounter3
 }
