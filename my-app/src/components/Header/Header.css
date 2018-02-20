@@ -2,9 +2,32 @@
     padding: 25px 0;
     text-align: center;
     background: #222;
+    width: 100%;
 }
 
 .header img {
     width: 100px;
     height: 13px;
+}
+
+.fade-in-animation {
+    -webkit-animation: fade-in 3s ease-out forwards;
+    animation: fade-in 3s ease-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -3,7 +3,7 @@ import './TeslaBattery.css';
 import TeslaNotice from '../../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../../components/TeslaCar/TeslaCar';
 import TeslaStats from '../../components/TeslaStats/TeslaStats';
-import {TeslaCounter,TeslaCounter2, TeslaCounter3} from '../../components/TeslaCounter/TeslaCounter';
+import {TeslaCounter,TeslaCounter2, TeslaCounter3, TeslaCounter4} from '../../components/TeslaCounter/TeslaCounter';
 import TeslaClimate from '../../components/TeslaClimate/TeslaClimate';
 import TeslaWheels from '../../components/TeslaWheels/TeslaWheels';
 import { getModelData } from '../../services/BatteryService';
@@ -118,10 +118,10 @@ class TeslaBattery extends React.Component {
         const { config, carstats } = this.state;
         return (
             <form className="tesla-battery">
-                <h1>Range Per Charge</h1>
+                <h1 className="fade-in-animation">Range Per Charge</h1>
                 <TeslaCar wheelsize={config.wheels} />
                 <TeslaStats carstats={carstats} />
-                <div className="tesla-controls cf">
+                <div className="tesla-controls cf tesla-controls-animation">
                     <div className="tesla-center-div-main">
                         <div className="tesla-center-div-in">
                             <TeslaCounter
@@ -141,14 +141,14 @@ class TeslaBattery extends React.Component {
                                 limit={this.state.config.temperature > 10}
                                 handleChangeClimate={this.handleChangeClimate}
                             />
-                            <TeslaCounter
+                            <TeslaCounter3
                                 currentValue={this.state.config.temperature}
                                 initValues={this.props.counterDefaultVal.temperature}
                                 increment={this.increment}
                                 decrement={this.decrement}
                             />
-                            <TeslaCounter3
-                                currentValue={(this.state.config.temperature*1.8)+32}
+                            <TeslaCounter4
+                                currentValue={(this.state.config.temperature * 1.8) + 32}
                                 initValues={this.props.counterDefaultVal.temperature}
                                 increment={this.increment}
                                 decrement={this.decrement}
@@ -156,7 +156,7 @@ class TeslaBattery extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="tesla-controls cf">
+                <div className="tesla-controls cf tesla-controls-animation">
                     <div className="tesla-center-div-main">
                         <TeslaWheels
                            value={this.state.config.wheels}

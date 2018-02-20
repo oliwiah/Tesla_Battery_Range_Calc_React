@@ -79,3 +79,42 @@
         transform: rotate(360deg);
     }
 }
+
+.tesla-car-animation {
+    -webkit-animation: slide-in-elliptic-bottom-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: slide-in-elliptic-bottom-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes slide-in-elliptic-bottom-fwd {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+        transform: translateY(600px) rotateX(30deg) scale(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% -1400px;
+        transform-origin: 50% -1400px;
+        opacity: 1;
+    }
+}
+@keyframes slide-in-elliptic-bottom-fwd {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+        transform: translateY(700px) rotateX(30deg) scale(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% -1400px;
+        transform-origin: 50% -1400px;
+        opacity: 1;
+    }
+}
+

@@ -1,3 +1,25 @@
 .wrapper {
   margin: 100px 0 150px;
 }
+
+.fade-in-animation {
+  -webkit-animation: fade-in 3s ease-out forwards;
+  animation: fade-in 3s ease-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

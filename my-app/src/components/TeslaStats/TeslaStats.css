@@ -73,3 +73,41 @@
 .tesla-stats-icon--p100d {
     background-image: url(../../assets/models/p100d.svg);
 }
+
+.tesla-stats-animation {
+    -webkit-animation: slit-in-horizontal 0.45s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+    animation: slit-in-horizontal 0.45s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+}
+
+@-webkit-keyframes slit-in-horizontal {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateX(90deg);
+        transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+    }
+    54% {
+        -webkit-transform: translateZ(-160px) rotateX(87deg);
+        transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateX(0);
+        transform: translateZ(0) rotateX(0);
+    }
+}
+@keyframes slit-in-horizontal {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateX(90deg);
+        transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+    }
+    54% {
+        -webkit-transform: translateZ(-160px) rotateX(87deg);
+        transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateX(0);
+        transform: translateZ(0) rotateX(0);
+    }
+}

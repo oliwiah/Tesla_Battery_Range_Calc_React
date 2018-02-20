@@ -11,7 +11,7 @@ const TeslaStats = (props) => {
         </li>
     ));
     return (
-        <div className="tesla-stats">
+        <div className="tesla-stats tesla-stats-animation">
             <ul>
                 {listItems}
             </ul>

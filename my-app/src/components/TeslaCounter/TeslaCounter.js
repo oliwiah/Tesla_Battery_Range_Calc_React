@@ -70,12 +70,45 @@ TeslaCounter2.propTypes = {
 
 const TeslaCounter3 = (props) => (
     <div className="tesla-counter">
+        <p className="tesla-counter__title">{ props.initValues.title }</p>
+        <div className="tesla-counter__container cf">
+            <div className="tesla-counter__item">
+                <p className="tesla-counter__number">
+                    { props.currentValue }
+                    <span id={"km"}>{ props.initValues.unit } c</span>
+                </p>
+                <div className="tesla-counter__controls">
+                    <button
+                        onClick={(e) => props.increment(e, props.initValues.title)}
+                        disabled={props.currentValue >= props.initValues.max}
+                    >
+                    </button>
+                    <button
+                        onClick={(e) => props.decrement(e, props.initValues.title)}
+                        disabled={props.currentValue <= props.initValues.min}
+                    >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+);
+
+TeslaCounter3.propTypes = {
+    currentValue: PropTypes.number,
+    increment: PropTypes.func,
+    decrement: PropTypes.func,
+    initValues: PropTypes.object
+}
+
+const TeslaCounter4 = (props) => (
+    <div className="tesla-counter">
         <p className="tesla-counter__title" id="hidden">{ props.initValues.title }</p>
         <div className="tesla-counter__container cf">
             <div className="tesla-counter__item">
                 <p className="tesla-counter__number">
                     { props.currentValue }
-                    <span id="km"> f </span>
+                    <span id="km">{ props.initValues.unit } f </span>
                 </p>
                 <div className="tesla-counter__controls">
                     <button
@@ -94,7 +127,7 @@ const TeslaCounter3 = (props) => (
     </div>
 );
 
-TeslaCounter3.propTypes = {
+TeslaCounter4.propTypes = {
     currentValue: PropTypes.number,
     increment: PropTypes.func,
     decrement: PropTypes.func,
@@ -104,5 +137,6 @@ TeslaCounter3.propTypes = {
 export {
     TeslaCounter,
     TeslaCounter2,
-    TeslaCounter3
+    TeslaCounter3,
+    TeslaCounter4
 }
