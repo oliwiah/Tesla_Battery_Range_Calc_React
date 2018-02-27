@@ -6,7 +6,7 @@ I reused some materials like data, images, css styles but also added my own func
 
 ## Functionality
 
-With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Model 3** according to a few variables:
+With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Car Model 3** according to a few variables:
 - type of battery
 - speed
 	- in miles per hour
