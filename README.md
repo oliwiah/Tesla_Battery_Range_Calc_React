@@ -24,8 +24,12 @@ With [this app](http://react-tesla-battery-range.surge.sh) you can check a batte
 	- 19'' (gives longer distance, that's why electric cars tend to have smaller wheels sizes)
 	- 21''
 
-## WARNING
+## Warning
 
 Please make sure you refreshed the browser to check the loading animation I created :blush:
+
+## Comments
+
+I plan to use Flex instead of floats in this app to make it responsive.
 
 [PREVIEW MY APP](http://react-tesla-battery-range.surge.sh)
