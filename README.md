@@ -4,6 +4,8 @@ This project is a React version of Todd Motto's [Building Tesla's battery range 
 
 I reused some materials like data, images, css styles but also added my own funcionalities like SI units buttons and changed some css styles and animations to make it look a bit different. Then I rebuilt it in **React way**.
 
+The project has been bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 ## Functionality
 
 With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Car Model 3** according to a few variables:
