@@ -19,3 +19,5 @@ With [this app](http://react-tesla-battery-range.surge.sh) you can check a batte
 - size of wheels:
 	- 19'' (gives longer distance, that's why electric cars tend to have smaller wheels sizes)
 	- 21''
+
+[PREVIEW MY APP](http://react-tesla-battery-range.surge.sh)
