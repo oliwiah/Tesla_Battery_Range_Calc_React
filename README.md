@@ -8,6 +8,14 @@ I reused some materials like data, images, css styles but also added my own func
 
 After constructing the project through the above app, I implemented each component by subdiving the UI. I managed the state and event using local state and props, and completed the entire app.
 
+## Technologies used
+
+* ReactJS
+* JavaScript (ES6 standard)
+* CSS
+* Bootstrap
+* JSON
+
 ## Functionality
 
 With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Car Model 3** according to a few variables:
