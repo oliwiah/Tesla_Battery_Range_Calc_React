@@ -18,7 +18,7 @@ After constructing the project through the above app, I implemented each compone
 
 ## Demo
 
-[![Demo TeslaCalc alpha](https://gifs.com/gif/tesla-battery-range-calc-rRp6Nk)]
+[![Demo TeslaCalc alpha](https://j.gifs.com/rRp6Nk.gif)]
 
 ## Functionality
 
