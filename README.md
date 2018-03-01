@@ -18,7 +18,7 @@ After constructing the project through the above app, I implemented each compone
 
 ## Demo
 
-[![Demo TeslaCalc alpha](https://j.gifs.com/rRp6Nk.gif)]
+![Demo TeslaCalc alpha](https://j.gifs.com/rRp6Nk.gif)
 
 ## Functionality
 
