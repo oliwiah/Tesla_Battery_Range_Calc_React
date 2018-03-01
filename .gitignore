@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /my-app/node_modules
+/readme_gifs
 
 # testing
 /coverage

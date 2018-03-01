@@ -16,6 +16,10 @@ After constructing the project through the above app, I implemented each compone
 * Bootstrap
 * JSON
 
+## Demo
+
+[![Demo TeslaCalc alpha](https://gifs.com/gif/tesla-battery-range-calc-rRp6Nk)]
+
 ## Functionality
 
 With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Car Model 3** according to a few variables:
