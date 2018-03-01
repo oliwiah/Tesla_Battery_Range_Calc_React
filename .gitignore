@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /my-app/node_modules
+/git_html
 
 # testing
 /coverage

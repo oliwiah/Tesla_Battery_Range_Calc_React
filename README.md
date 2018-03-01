@@ -20,6 +20,8 @@ After constructing the project through the above app, I implemented each compone
 
 ![Demo TeslaCalc alpha](https://j.gifs.com/rRp6Nk.gif)
 
+In case you cannot view demo, [check here](gif.gif)
+
 ## Functionality
 
 With [this app](http://react-tesla-battery-range.surge.sh) you can check a battery range in **Tesla Car Model 3** according to a few variables:
