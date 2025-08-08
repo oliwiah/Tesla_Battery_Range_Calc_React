@@ -11,23 +11,16 @@ class TeslaCounter extends React.Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        const { currentValue, initValues } = nextProps;
-        if (this.props.currentValue !== nextProps.currentValue) {
-            const direction = this.props.currentValue < nextProps.currentValue ? 'increase' : 'decrese';
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentValue !== this.props.currentValue) {
+            const direction = prevProps.currentValue < this.props.currentValue ? 'increase' : 'decrease';
             this.setState({
                 animationEffect: true,
                 direction
             });
-
-            setTimeout(
-                () => {
-                    this.setState({
-                        animationEffect: false
-                    })
-                }, 200
-            );
-            return;
+            setTimeout(() => {
+                this.setState({ animationEffect: false })
+            }, 200);
         }
     }
 
@@ -82,23 +75,16 @@ class TeslaCounter2 extends React.Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        const { currentValue, initValues } = nextProps;
-        if (this.props.currentValue !== nextProps.currentValue) {
-            const direction = this.props.currentValue < nextProps.currentValue ? 'increase' : 'decrese';
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentValue !== this.props.currentValue) {
+            const direction = prevProps.currentValue < this.props.currentValue ? 'increase' : 'decrease';
             this.setState({
                 animationEffect: true,
                 direction
             });
-
-            setTimeout(
-                () => {
-                    this.setState({
-                        animationEffect: false
-                    })
-                }, 200
-            );
-            return;
+            setTimeout(() => {
+                this.setState({ animationEffect: false })
+            }, 200);
         }
     }
 
@@ -155,23 +141,16 @@ class TeslaCounter3 extends React.Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        const {currentValue, initValues} = nextProps;
-        if (this.props.currentValue !== nextProps.currentValue) {
-            const direction = this.props.currentValue < nextProps.currentValue ? 'increase' : 'decrese';
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentValue !== this.props.currentValue) {
+            const direction = prevProps.currentValue < this.props.currentValue ? 'increase' : 'decrease';
             this.setState({
                 animationEffect: true,
                 direction
             });
-
-            setTimeout(
-                () => {
-                    this.setState({
-                        animationEffect: false
-                    })
-                }, 200
-            );
-            return;
+            setTimeout(() => {
+                this.setState({ animationEffect: false })
+            }, 200);
         }
     }
 
@@ -228,23 +207,16 @@ class TeslaCounter4 extends React.Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        const {currentValue, initValues} = nextProps;
-        if (this.props.currentValue !== nextProps.currentValue) {
-            const direction = this.props.currentValue < nextProps.currentValue ? 'increase' : 'decrese';
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentValue !== this.props.currentValue) {
+            const direction = prevProps.currentValue < this.props.currentValue ? 'increase' : 'decrease';
             this.setState({
                 animationEffect: true,
                 direction
             });
-
-            setTimeout(
-                () => {
-                    this.setState({
-                        animationEffect: false
-                    })
-                }, 200
-            );
-            return;
+            setTimeout(() => {
+                this.setState({ animationEffect: false })
+            }, 200);
         }
     }
 
